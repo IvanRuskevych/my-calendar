@@ -1,5 +1,5 @@
 {
-    "name"            : "tmp-monorepo-base",
+    "name"            : "my-calendar",
     "version"         : "1.0.0",
     "description"     : "Monorepo with React frontend (Vite + TS) and Express backend (TS)",
     "private"         : true,
