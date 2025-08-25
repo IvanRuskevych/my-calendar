@@ -101,6 +101,9 @@ export default tseslint.config([
           alwaysTryTypes: true,
           project: ['tsconfig.eslint.json'],
         },
+        node: {
+          project: ['./packages/frontend/package.json', './packages/backend/package.json'],
+        },
       },
     },
   },
