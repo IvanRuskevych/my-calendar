@@ -16,6 +16,7 @@ export const lightTheme = createTheme({
     customColors: {
       weekend: '#e0e0e0',
       today: '#ff5722',
+      dividerFixed: '#404040',
     },
   },
 });

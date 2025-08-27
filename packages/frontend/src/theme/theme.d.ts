@@ -5,6 +5,7 @@ declare module '@mui/material/styles' {
   interface CustomColors {
     weekend: string;
     today: string;
+    dividerFixed: string;
   }
 
   interface Palette {

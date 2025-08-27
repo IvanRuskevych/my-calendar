@@ -7,3 +7,10 @@ export const ROUTER_KEYS = {
   REGISTER: '/register', // public
   PROFILE: '/profile', // private
 };
+
+export const MOMENT_KEYS = Object.freeze({
+  YYYYMMDD: 'YYYYMMDD',
+  MONTH: 'month',
+  WEEK: 'week',
+  DAY: 'day',
+});
