@@ -11,6 +11,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { type MouseEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeToggle } from '~/components/ui';
 import { ROUTER_KEYS } from '~/shared/constants/keys.ts';
 
 const pages = [
@@ -97,25 +98,6 @@ export function Header() {
               ))}
             </Menu>
           </Box>
-          {/*<CalendarMonthRoundedIcon sx={{ display: { xs: 'flex', sm: 'none' }, mr: 1 }} />*/}
-          {/*<Typography*/}
-          {/*  variant="h5"*/}
-          {/*  noWrap*/}
-          {/*  component={Link}*/}
-          {/*  to={pages[0].path}*/}
-          {/*  sx={{*/}
-          {/*    mr: 2,*/}
-          {/*    display: { xs: 'flex', sm: 'none' },*/}
-          {/*    flexGrow: 1,*/}
-          {/*    fontFamily: 'monospace',*/}
-          {/*    fontWeight: 700,*/}
-          {/*    letterSpacing: '.3rem',*/}
-          {/*    color: 'inherit',*/}
-          {/*    textDecoration: 'none',*/}
-          {/*  }}*/}
-          {/*>*/}
-          {/*  Calendar*/}
-          {/*</Typography>*/}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
@@ -129,6 +111,7 @@ export function Header() {
               </Button>
             ))}
           </Box>
+          <ThemeToggle />
         </Toolbar>
       </Container>
     </AppBar>
