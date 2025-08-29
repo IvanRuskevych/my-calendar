@@ -11,7 +11,7 @@ export const lightTheme = createTheme({
     },
     text: {
       primary: '#000000',
-      secondary: '#555555',
+      secondary: '#a3a1a3',
     },
     customColors: {
       weekend: '#e0e0e0',

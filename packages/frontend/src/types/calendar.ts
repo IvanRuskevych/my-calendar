@@ -21,8 +21,9 @@ export type CalendarGridProps = Pick<UseCalendarResult, 'daysArray' | 'today' | 
 export type CalendarMonitorProps = Pick<UseCalendarResult, 'currentDate' | 'prevMonth' | 'resetToToday' | 'nextMonth'>;
 
 export interface CellWrapperProps extends BoxProps {
-  isWeekend: boolean;
-  isCurrentMonth: boolean;
+  isWeekend?: boolean;
+  isCurrentMonth?: boolean;
+  isHeader?: boolean;
 }
 
 export interface CurrentDayWrapperProps extends BoxProps {
@@ -31,4 +32,7 @@ export interface CurrentDayWrapperProps extends BoxProps {
 
 export interface RowInCellProps extends BoxProps {
   justifyContent?: 'flex-start' | 'flex-end' | 'center' | 'space-between';
+}
+export interface CalendarGridWrapperProps extends BoxProps {
+  isHeader?: boolean;
 }

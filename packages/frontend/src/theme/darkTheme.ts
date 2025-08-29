@@ -10,8 +10,8 @@ export const darkTheme = createTheme({
       paper: '#1e1f21',
     },
     text: {
-      primary: '#ffffff',
-      secondary: '#dddcdd',
+      primary: '#dddcdd',
+      secondary: '#555759',
     },
     customColors: {
       weekend: '#272829',
