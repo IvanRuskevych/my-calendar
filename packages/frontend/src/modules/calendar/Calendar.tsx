@@ -1,16 +1,18 @@
-import moment, { type Moment } from 'moment';
 import type { FC } from 'react';
 import { CalendarGrid } from '~/components/calendar/CalendarGrid.tsx';
 import { CalendarHeader } from '~/components/calendar/CalendarHeader.tsx';
+import { CalendarMonitor } from '~/components/calendar/CalendarMonitor.tsx';
+import { useCalendar } from '~/hooks';
+import { ShadowWrapper } from '~/modules/calendar/styles.ts';
 
 export const Calendar: FC = () => {
-  const startDay: Moment = moment().startOf('month').startOf('week');
-  const today = moment();
+  const calendar = useCalendar();
 
   return (
-    <>
+    <ShadowWrapper>
       <CalendarHeader />
-      <CalendarGrid startDay={startDay} today={today} />
-    </>
+      <CalendarMonitor {...calendar} />
+      <CalendarGrid {...calendar} />
+    </ShadowWrapper>
   );
 };

@@ -11,7 +11,7 @@ export const darkTheme = createTheme({
     },
     text: {
       primary: '#ffffff',
-      secondary: '#aaaaaa',
+      secondary: '#dddcdd',
     },
     customColors: {
       weekend: '#272829',

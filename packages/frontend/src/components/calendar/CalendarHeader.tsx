@@ -1,12 +1,9 @@
-import { Box } from '@mui/material';
-import Typography from '@mui/material/Typography';
+import { CalendarHeaderWrapper, HeaderTitle } from '~/components/calendar/calendar.styles.ts';
 
 export const CalendarHeader = () => {
   return (
-    <Box>
-      <Typography variant="h6" component="div" display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-        Calendar
-      </Typography>
-    </Box>
+    <CalendarHeaderWrapper>
+      <HeaderTitle>Calendar</HeaderTitle>
+    </CalendarHeaderWrapper>
   );
 };

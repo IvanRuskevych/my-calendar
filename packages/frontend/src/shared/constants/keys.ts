@@ -9,8 +9,12 @@ export const ROUTER_KEYS = {
 };
 
 export const MOMENT_KEYS = Object.freeze({
-  YYYYMMDD: 'YYYYMMDD',
   MONTH: 'month',
   WEEK: 'week',
   DAY: 'day',
+});
+export const MOMENT_FORMAT = Object.freeze({
+  YYYYMMDD: 'YYYYMMDD',
+  YYYY: 'YYYY',
+  MMMM: 'MMMM',
 });
