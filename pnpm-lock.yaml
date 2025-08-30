@@ -6,6 +6,10 @@ settings:
 
 importers:
   .:
+    dependencies:
+      is-ci:
+        specifier: ^4.1.0
+        version: 4.1.0
     devDependencies:
       '@eslint/js':
         specifier: 9.33.0
@@ -46,9 +50,6 @@ importers:
       husky:
         specifier: 9.1.7
         version: 9.1.7
-      is-ci:
-        specifier: ^4.1.0
-        version: 4.1.0
       lint-staged:
         specifier: 16.1.5
         version: 16.1.5
