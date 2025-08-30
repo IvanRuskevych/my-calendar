@@ -1,14 +1,14 @@
-import tsParser from '@typescript-eslint/parser'
-import prettierConfig from 'eslint-config-prettier'
-import importPlugin from 'eslint-plugin-import'
-import prettierPlugin from 'eslint-plugin-prettier'
-import reactPlugin from 'eslint-plugin-react'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import globals from 'globals'
-import path from 'path'
-import tseslint from 'typescript-eslint'
-import { fileURLToPath } from 'url'
+import tsParser from '@typescript-eslint/parser';
+import prettierConfig from 'eslint-config-prettier';
+import importPlugin from 'eslint-plugin-import';
+import prettierPlugin from 'eslint-plugin-prettier';
+import reactPlugin from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
+import path from 'path';
+import tseslint from 'typescript-eslint';
+import { fileURLToPath } from 'url';
 
 export default tseslint.config([
   {
