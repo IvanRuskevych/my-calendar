@@ -11,7 +11,6 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "postinstall": "is-ci || husky install",
     "lint": "eslint packages/backend/src packages/frontend/src --cache",
     "lint:warn": "eslint packages/backend/src packages/frontend/src",
     "lint:fix": "eslint packages/backend/src packages/frontend/src --fix",
